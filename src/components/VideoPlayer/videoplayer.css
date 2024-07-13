@@ -17,7 +17,7 @@
 .vdotitle h1 span {
     text-decoration: line-through;
     background: linear-gradient(180deg, #FFFFFF 35.06%, #CCCCCC 57.79%, #999999 80.52%);
-    color: white;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
  }
