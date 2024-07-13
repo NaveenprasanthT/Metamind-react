@@ -1,0 +1,23 @@
+.videoPlayerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.vdotitle h1{
+    font-size: 48px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #FFFFFF 35.06%, #CCCCCC 57.79%, #999999 80.52%);
+    color: transparent;
+    background-clip: text;
+    max-width: 360px;
+}
+
+.vdotitle h1 span {
+    text-decoration: line-through;
+    background: linear-gradient(180deg, #FFFFFF 35.06%, #CCCCCC 57.79%, #999999 80.52%);
+    color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+ }

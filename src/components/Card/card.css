@@ -1,0 +1,25 @@
+.cardContainer{
+    color: white;
+    margin: 3% 9%;
+}
+
+.cardWrapper{
+    background-color:#101118;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 70px 0;
+    gap: 7rem;
+}
+
+.cardLContainer h1{
+   font-size: 48px;
+   font-weight: 500;
+
+}
+
+.cardLContainer p {
+    line-height: 24px;
+    font-weight: 400;
+}

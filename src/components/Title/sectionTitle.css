@@ -1,0 +1,8 @@
+.sectionTile {
+    font-size: 48px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #FFFFFF 35.06%, #CCCCCC 57.79%, #999999 80.52%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

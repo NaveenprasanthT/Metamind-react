@@ -1,0 +1,36 @@
+.navbarContainer{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.navbarWrap {
+    display: flex;
+    border: 0.5px solid #575757;
+    border-radius: 200px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 24px;
+    position: sticky;
+    margin: 2% 12%;
+}
+
+.navLogo img{
+    width: 32px;
+    height: 50px;
+}
+
+.menuLists{
+  display: flex;
+}
+
+.menuLists li {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 38px;
+}

@@ -1,0 +1,35 @@
+.aboutContainer{
+    margin: 5%;
+    width: 86%;
+    display: flex;
+}
+
+
+.aboutLeftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.aboutLeftContainer h1{
+    background: linear-gradient(180deg, #FFFFFF 35.06%, #CCCCCC 57.79%, #999999 80.52%);
+    color: transparent;
+    font-size: 48px;
+    background-clip: text;
+    font-weight: 500;
+}
+
+.aboutRightContainer {
+    flex: 1;
+    text-align: start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.aboutRightContainer p{
+    font-weight: 500;
+    line-height: 28.8px;
+}
