@@ -17,6 +17,8 @@
     padding: 10px 24px;
     position: sticky;
     margin: 2% 12%;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
 }
 
 .navLogo img{

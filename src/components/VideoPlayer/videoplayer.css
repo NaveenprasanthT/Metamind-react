@@ -3,21 +3,31 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .vdotitle h1{
     font-size: 48px;
     font-weight: 500;
-    background: linear-gradient(180deg, #FFFFFF 35.06%, #CCCCCC 57.79%, #999999 80.52%);
-    color: transparent;
-    background-clip: text;
+    color: white;
     max-width: 360px;
 }
 
 .vdotitle h1 span {
-    text-decoration: line-through;
-    background: linear-gradient(180deg, #FFFFFF 35.06%, #CCCCCC 57.79%, #999999 80.52%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    text-decoration-line: line-through;
+    color: whitesmoke;
  }
+
+ .vdotitle p{
+    margin-bottom: 25px;
+ }
+
+ .videoContainer {
+    margin: 50px 0;
+ }
+
+ /* .videoContainer .video{
+    width: 1000px;
+    height: 100%;
+ } */
