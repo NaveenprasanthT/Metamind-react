@@ -37,4 +37,10 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+.menuLists li:hover{
+    scale: 1.1;
+    color: #6633EE;
 }

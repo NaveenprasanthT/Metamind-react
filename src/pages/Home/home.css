@@ -9,12 +9,12 @@
 
 .background-color-wrap{
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   z-index: 1;
   
   width: 90%;
-  height: 35%;
+  height: 25%;
   background-image: radial-gradient(#6633EE, #09090F);
   transform: translate(-50%, -50%);
   filter: blur(150px);
