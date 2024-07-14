@@ -1,14 +1,26 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./about.css";
 import SectionTitle from "../../Shared/Title/sectionTitle";
 
 const About = () => {
   return (
     <div className="aboutContainer">
-      <div className="aboutLeftContainer">
-        <SectionTitle title={"Welcome to Metamind"}/>
-      </div>
-      <div className="aboutRightContainer">
+      <motion.div
+        className="aboutLeftContainer"
+        initial={{ opacity: 0, y: 50, scale: 0.9 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <SectionTitle title={"Welcome to Metamind"} />
+      </motion.div>
+      <motion.div
+        className="aboutRightContainer"
+        initial={{ opacity: 0, y: 50, scale: 0.9 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}>
         <p>
           We are a team of passionate creatives who are dedicated to helping our
           clients achieve their marketing goals through innovative and effective
@@ -28,7 +40,7 @@ const About = () => {
           to exceed our clients’ expectations and deliver outstanding results
           that help them achieve their business objectives.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

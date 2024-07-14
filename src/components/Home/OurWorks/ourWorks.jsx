@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import image1 from "../../../assets/OurWorks/image1.png";
 import image2 from "../../../assets/OurWorks/image2.png";
 import image3 from "../../../assets/OurWorks/image3.png";
@@ -62,11 +63,18 @@ function OurWorks() {
   ];
   return (
     <div className="our-works-wrap">
-      <SectionTitle title="Our Works" />
+      <motion.div
+        initial={{ opacity: 0, y: 50, scale: 0.9 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <SectionTitle title="Our Works" />
+      </motion.div>
       <div className="our-works-container">
         <div className="our-works-first-section">
           {firstSection?.map((each) => (
-            <img
+            <motion.img
               src={each?.imageToShow}
               style={{
                 gridColumnStart: each.gridColumnStart,
@@ -76,6 +84,10 @@ function OurWorks() {
               }}
               key={each.id}
               className="first-section-image"
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
             />
           ))}
         </div>

@@ -1,0 +1,37 @@
+.our-service-wrap{
+  padding: 3% 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+}
+
+.our-service-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vw;
+}
+
+.each-service-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 8% 15%;
+  border-radius: 3px;
+  background-color: #101118;
+}
+
+.each-service-wrap span{
+
+}
+
+.each-service-wrap h1{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.each-service-wrap p{
+  font-weight: 400;
+  line-height: 24px;
+}
