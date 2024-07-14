@@ -1,11 +1,12 @@
 import React from 'react';
-import image1 from "../../assets/OurWorks/image1.png";
-import image2 from "../../assets/OurWorks/image2.png";
-import image3 from "../../assets/OurWorks/image3.png";
-import image4 from "../../assets/OurWorks/image4.png";
-import image5 from "../../assets/OurWorks/image5.png";
-import image6 from "../../assets/OurWorks/image6.png";
+import image1 from "../../../assets/OurWorks/image1.png";
+import image2 from "../../../assets/OurWorks/image2.png";
+import image3 from "../../../assets/OurWorks/image3.png";
+import image4 from "../../../assets/OurWorks/image4.png";
+import image5 from "../../../assets/OurWorks/image5.png";
+import image6 from "../../../assets/OurWorks/image6.png";
 import './ourWorks.css';
+import SectionTitle from '../../Shared/Title/sectionTitle';
 
 function OurWorks() {
   const firstSection = [
@@ -60,7 +61,7 @@ function OurWorks() {
   ];
   return (
     <div className="our-works-wrap">
-      <h1>Our Works</h1>
+      <SectionTitle title="Our Works" />
       <div className="our-works-container">
         <div className="our-works-first-section">
           {firstSection?.map((each) => (
@@ -78,7 +79,9 @@ function OurWorks() {
           ))}
         </div>
       </div>
-      <button>Show more</button>
+      <div className="button-wrap">
+        
+      </div>
     </div>
   );
 }

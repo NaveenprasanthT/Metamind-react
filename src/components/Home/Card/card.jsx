@@ -1,6 +1,6 @@
 import React from "react";
 import "./card.css";
-import Button from "../Button/button";
+import Button from "../../Shared/Button/button";
 
 const Card = () => {
   return (

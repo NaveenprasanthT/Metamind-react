@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import SectionTitle from "../Title/sectionTitle";
+import SectionTitle from "../../Shared/Title/sectionTitle";
 
 const About = () => {
   return (
