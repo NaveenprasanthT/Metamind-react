@@ -1,4 +1,4 @@
-.our-service-wrap{
+.our-service-wrap {
   padding: 3% 5%;
   display: flex;
   flex-direction: column;
@@ -6,13 +6,13 @@
   gap: 40px;
 }
 
-.our-service-container{
+.our-service-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5vw;
 }
 
-.each-service-wrap{
+.each-service-wrap {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -22,16 +22,65 @@
   background-color: #101118;
 }
 
-.each-service-wrap span{
+.each-service-wrap span {}
 
-}
-
-.each-service-wrap h1{
+.each-service-wrap h1 {
   font-size: 24px;
   font-weight: 500;
 }
 
-.each-service-wrap p{
+.each-service-wrap p {
   font-weight: 400;
   line-height: 24px;
+}
+
+@media screen and (max-width: 1300px) {
+  .our-service-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .each-service-wrap p {
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .each-service-wrap {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .our-service-container {
+    grid-template-columns: 1fr;
+  }
+
+  .each-service-wrap h1 {
+    font-size: 22px;
+  }
+
+  .each-service-wrap p {
+    line-height: 22px;
+  }
+
+  .each-service-wrap {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .our-service-container {
+    grid-template-columns: 1fr;
+  }
+
+  .each-service-wrap h1 {
+    font-size: 20px;
+  }
+
+  .each-service-wrap p {
+    line-height: 20px;
+  }
+
+  .each-service-wrap {
+    gap: 8px;
+  }
 }
