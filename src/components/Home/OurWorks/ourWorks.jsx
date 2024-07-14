@@ -7,6 +7,7 @@ import image5 from "../../../assets/OurWorks/image5.png";
 import image6 from "../../../assets/OurWorks/image6.png";
 import './ourWorks.css';
 import SectionTitle from '../../Shared/Title/sectionTitle';
+import Button from '../../Shared/Button/button';
 
 function OurWorks() {
   const firstSection = [
@@ -80,7 +81,7 @@ function OurWorks() {
         </div>
       </div>
       <div className="button-wrap">
-        
+        <Button buttonTxt="Show more" />
       </div>
     </div>
   );

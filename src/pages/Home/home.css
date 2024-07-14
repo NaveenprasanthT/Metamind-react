@@ -1,0 +1,23 @@
+.home{
+  position: relative;
+}
+
+.main-section {
+  position: relative;
+  z-index: 2;
+}
+
+.background-color-wrap{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 1;
+  
+  width: 90%;
+  height: 35%;
+  background-image: radial-gradient(#6633EE, #09090F);
+  transform: translate(-50%, -50%);
+  filter: blur(150px);
+  border-radius: 50%;
+  opacity: 0.5;
+}
