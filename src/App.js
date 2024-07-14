@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <MainSection />
       <About />
-      <Card />
       <OurWorks />
+      <Card />
     </div>
   );
 }
