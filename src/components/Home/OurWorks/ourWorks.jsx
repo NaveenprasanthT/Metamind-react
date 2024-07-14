@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import image1 from "../../../assets/OurWorks/image1.png";
-import image2 from "../../../assets/OurWorks/image2.png";
-import image3 from "../../../assets/OurWorks/image3.png";
-import image4 from "../../../assets/OurWorks/image4.png";
-import image5 from "../../../assets/OurWorks/image5.png";
-import image6 from "../../../assets/OurWorks/image6.png";
+import image1 from "../../../assets/OurWorks/video/vdo1.mp4";
+import image2 from "../../../assets/OurWorks/video/vdo2.mp4";
+import image3 from "../../../assets/OurWorks/video/vdo3.mp4";
+import image4 from "../../../assets/OurWorks/video/vdo4.mp4";
+import image5 from "../../../assets/OurWorks/video/vdo5.mp4";
+import image6 from "../../../assets/OurWorks/video/vdo6.mp4";
 import './ourWorks.css';
 import SectionTitle from '../../Shared/Title/sectionTitle';
 import Button from '../../Shared/Button/button';
+import ReactPlayer from 'react-player';
 
 function OurWorks() {
   const firstSection = [
@@ -74,26 +75,45 @@ function OurWorks() {
       <div className="our-works-container">
         <div className="our-works-first-section">
           {firstSection?.map((each) => (
-            <motion.img
-              src={each?.imageToShow}
+            <motion.div
+              className="first-section"
               style={{
                 gridColumnStart: each.gridColumnStart,
                 gridColumnEnd: each.gridColumnEnd,
                 gridRowStart: each.gridRowStart,
                 gridRowEnd: each.gridRowEnd,
               }}
-              key={each.id}
-              className="first-section-image"
               initial={{ opacity: 0, y: 50, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
-            />
+            >
+              {/* <ReactPlayer
+                controls={true}
+                url={each.imageToShow}
+                width={"100%"}
+                height={"100%"}
+                style={{
+                  height: '100%',
+                  width: '100%',
+                  objectFit: 'cover',
+                }}
+              /> */}
+              <video
+                controls="true"
+                src={each.imageToShow}
+                style={{
+                  height: '100%',
+                  width: '100%',
+                  objectFit: 'cover',
+                }}
+              />
+            </motion.div>
           ))}
         </div>
       </div>
       <div className="button-wrap">
-        <Button buttonTxt="Show more" />
+        {/* <Button buttonTxt="Show more" /> */}
       </div>
     </div>
   );
