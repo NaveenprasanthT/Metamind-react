@@ -55,4 +55,20 @@
 
    border-radius: 12px;
    overflow: hidden;
+   position: relative;
+}
+
+.iconContainer {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+
+   transform: translate(-50%, -50%);
+   display: flex;
+   background: #00000080;
+   border-radius: 50%;
+   width: 64px;
+   height: 64px;
+   align-items: center;
+   justify-content: center;
 }
