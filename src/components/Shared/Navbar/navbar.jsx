@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../Button/button';
-import logo from '../../assets/mmLogo.png'
+import Button from '../../Shared/Button/button';
+import logo from '../../../assets/mmLogo.png'
 import './navbar.css'
 
 const Navbar = () => {

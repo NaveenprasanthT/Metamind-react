@@ -6,7 +6,9 @@
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
+
 .navbarWrap {
     display: flex;
     border: 0.5px solid #575757;
@@ -17,8 +19,8 @@
     padding: 10px 24px;
     position: sticky;
     margin: 2% 12%;
-    background-color: transparent;
-    backdrop-filter: blur(50px);
+    background-color: #0E0F1180;
+    backdrop-filter: blur(100px);
 }
 
 .navLogo img{
@@ -28,11 +30,11 @@
 
 .menuLists{
   display: flex;
+  gap: 64px;
 }
 
 .menuLists li {
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
-    margin: 0 38px;
 }
