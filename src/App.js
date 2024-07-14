@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/navbar';
 import './App.css'
 import Card from './components/Card/card';
 import MainSection from './components/VideoPlayer/mainSection';
+import OurWorks from './components/OurWorks/ourWorks';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <MainSection />
       <About />
+      <OurWorks />
       <Card />
     </div>
   );
