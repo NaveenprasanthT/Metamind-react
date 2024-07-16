@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import image1 from "../../../assets/OurWorks/video/vdo1.mp4";
 import image2 from "../../../assets/OurWorks/video/vdo2.mp4";
@@ -9,9 +9,10 @@ import image6 from "../../../assets/OurWorks/video/vdo6.mp4";
 import './ourWorks.css';
 import SectionTitle from '../../Shared/Title/sectionTitle';
 import Button from '../../Shared/Button/button';
-import ReactPlayer from 'react-player';
+import CustomReactPlayer from '../../Shared/ReactPlayer/reactPlayer';
 
 function OurWorks() {
+  const [playingVideo, setPlayingVideo] = useState(null);
   const firstSection = [
     {
       id: 1,
@@ -74,7 +75,7 @@ function OurWorks() {
       </motion.div>
       <div className="our-works-container">
         <div className="our-works-first-section">
-          {firstSection?.map((each) => (
+          {firstSection?.map((each, index) => (
             <motion.div
               className="first-section"
               style={{
@@ -88,25 +89,11 @@ function OurWorks() {
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
-              {/* <ReactPlayer
-                controls={true}
-                url={each.imageToShow}
-                width={"100%"}
-                height={"100%"}
-                style={{
-                  height: '100%',
-                  width: '100%',
-                  objectFit: 'cover',
-                }}
-              /> */}
-              <video
-                controls="true"
-                src={each.imageToShow}
-                style={{
-                  height: '100%',
-                  width: '100%',
-                  objectFit: 'cover',
-                }}
+              <CustomReactPlayer
+                play={playingVideo === index}
+                file={each.imageToShow}
+                handlePlay={() => setPlayingVideo(index)}
+                handlePause={() => setPlayingVideo(null)}
               />
             </motion.div>
           ))}
