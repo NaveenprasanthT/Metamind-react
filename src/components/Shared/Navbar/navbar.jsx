@@ -75,7 +75,7 @@ const Navbar = ({ activeSection }) => {
                     className="mobile-menus"
                     style={{ right: mobileToggle === false ? '-100vw' : '0' }}
                 >
-                    <ul>
+                    <div className="mobile-menu-wrap">
                         <li
                             onClick={() => scrollToElementWithOffset('main-section')}
                         >
@@ -101,7 +101,8 @@ const Navbar = ({ activeSection }) => {
                         >
                             Contact Us
                         </li>
-                    </ul>
+                    </div>
+                    <img alt='navbar-logo' className="mobile-navbar-logo" src={logo} />
                     <div className="close-icon" onClick={() => setMobileToggle(false)}><CloseIcon /></div>
                 </div>
             </div>
