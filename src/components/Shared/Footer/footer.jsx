@@ -9,7 +9,7 @@ function Footer() {
     const element = document.getElementById(id);
     if (element) {
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - 100;
+      const offsetPosition = elementPosition - 150;
 
       window.scrollTo({
         top: offsetPosition,

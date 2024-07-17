@@ -1,17 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "../../Shared/Button/button";
-import ReactPlayer from "react-player";
 import Video from '../../../assets/video.mp4'
 import "./videoplayer.css";
-import { PauseIcon, PlayIcon } from "../../../assets/svg/playIcon";
+import CustomReactPlayer from "../../Shared/ReactPlayer/reactPlayer";
 
 const MainSection = () => {
-  const [play,setPlay] = useState(false);
-
-  const handleClick = () => {
-    setPlay(!play)
-  }
+  const [playingVideo, setPlayingVideo] = useState(false);
 
   return (
     <div className="videoPlayerContainer">
@@ -38,8 +33,12 @@ const MainSection = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <ReactPlayer url={Video} width={"100%"} height={"100%"} playing={play}/>
-        <div onClick={handleClick} className="iconContainer">{play ? <PauseIcon /> : <PlayIcon />}</div>
+        <CustomReactPlayer
+          play={playingVideo}
+          file={Video}
+          handlePlay={() => setPlayingVideo(true)}
+          handlePause={() => setPlayingVideo(false)}
+        />
       </motion.div>
     </div>
   );

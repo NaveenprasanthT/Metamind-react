@@ -6,3 +6,39 @@
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+@media screen and (max-width: 1700px) {
+    .sectionTile {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .sectionTile {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sectionTile {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sectionTile {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sectionTile {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .sectionTile {
+        font-size: 24px;
+    }
+}

@@ -30,9 +30,72 @@ function LinkedInIcon() {
   );
 }
 
+function ToggleIcon() {
+  return (
+    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 6.64575H20M4 12.6458H20M4 18.6458H11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 12L7 7M12 12L17 17M12 12L17 7M12 12L7 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+}
+
+const PlayIcon = () => {
+  return (
+    <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_di_205_82)">
+        <circle cx="25" cy="24.5" r="24.5" fill="url(#paint0_linear_205_82)" />
+      </g>
+      <path d="M20.406 17.537C20.3149 17.483 20.2111 17.454 20.1052 17.4531C19.9993 17.4522 19.8951 17.4793 19.8031 17.5317C19.711 17.5841 19.6345 17.66 19.5813 17.7515C19.5281 17.8431 19.5 17.9471 19.5 18.053V31.947C19.5 32.0529 19.5281 32.1569 19.5813 32.2485C19.6345 32.34 19.711 32.4158 19.8031 32.4683C19.8951 32.5207 19.9993 32.5478 20.1052 32.5469C20.2111 32.5459 20.3149 32.517 20.406 32.463L32.129 25.516C32.2185 25.4629 32.2927 25.3874 32.3442 25.2969C32.3957 25.2064 32.4228 25.1041 32.4228 25C32.4228 24.8959 32.3957 24.7936 32.3442 24.7031C32.2927 24.6126 32.2185 24.5371 32.129 24.484L20.406 17.537Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <defs>
+        <filter id="filter0_di_205_82" x="0.5" y="0" width="50" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_205_82" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_205_82" result="shape" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="1" dy="1" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0" />
+          <feBlend mode="normal" in2="shape" result="effect2_innerShadow_205_82" />
+        </filter>
+        <linearGradient id="paint0_linear_205_82" x1="25" y1="0" x2="25" y2="49" gradientUnits="userSpaceOnUse">
+          <stop offset="0.245599" stop-color="#212127" />
+          <stop offset="1" stop-color="#12131A" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+
+const PauseIcon = () => {
+  return (
+    <svg fill="#000000" height="18" width="15" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 15 18">
+      <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M224,320
+c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z M352,320
+c0,8.836-7.164,16-16,16h-32c-8.836,0-16-7.164-16-16V192c0-8.836,7.164-16,16-16h32c8.836,0,16,7.164,16,16V320z"/>
+    </svg>
+  )
+}
+
 export {
   FacebookIcon,
   TwitterIcon,
   InstagramIcon,
   LinkedInIcon,
+  ToggleIcon,
+  CloseIcon,
+  PlayIcon,
+  PauseIcon,
 };

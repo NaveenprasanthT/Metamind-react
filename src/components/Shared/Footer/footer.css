@@ -1,20 +1,20 @@
-.footer-wrap{
+.footer-wrap {
   padding: 3% 5% 0%;
 }
 
-.footer-with-logo{
+.footer-with-logo {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.footer-logo{
+.footer-logo {
   width: 50px;
   height: 75px;
   object-fit: contain;
 }
 
-.footer-container{
+.footer-container {
   display: grid;
   grid-template-columns: 1fr 1.5fr max-content;
   align-items: center;
@@ -25,18 +25,18 @@
   border-bottom: 0.5px solid #9CA0AB;
 }
 
-.footer-left p{
+.footer-left p {
   width: 70%;
   line-height: 24px;
 }
 
-.footer-menus{
+.footer-menus {
   display: flex;
   gap: 35px;
   list-style: none;
 }
 
-.footer-menus li{
+.footer-menus li {
   font-size: 14px;
   font-weight: 600;
   padding: 0 10px 0 0;
@@ -44,24 +44,62 @@
   cursor: pointer;
 }
 
-.footer-menus li:last-child{
+.footer-menus li:last-child {
   border-right: none;
 }
 
-.footer-social-icons{
+.footer-social-icons {
   display: flex;
   gap: 30px;
 }
 
-.footer-social-icons span{
+.footer-social-icons span {
   cursor: pointer;
 }
 
-.footer-rights{
+.footer-rights {
   padding: 45px 0 20px;
   text-align: center;
 }
 
-.footer-rights p{
+.footer-rights p {}
 
+@media screen and (max-width: 1100px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer-container {
+    padding: 0 0 20px;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-left p {
+    width: 90%;
+    line-height: 20px;
+  }
+
+  .footer-rights {
+    padding: 20px 0 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-menus {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer-menus {
+    justify-content: flex-start;
+  }
 }

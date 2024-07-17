@@ -1,4 +1,4 @@
-.home{
+.home {
   position: relative;
 }
 
@@ -7,17 +7,32 @@
   z-index: 2;
 }
 
-.background-color-wrap{
+.background-color-wrap {
   position: absolute;
   top: 15%;
   left: 50%;
   z-index: 1;
-  
+
   width: 90%;
-  height: 25%;
+  height: 1200px;
   background-image: radial-gradient(#6633EE, #09090F);
   transform: translate(-50%, -50%);
   filter: blur(150px);
   border-radius: 50%;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1200px) {
+  .background-color-wrap {
+    height: 900px;
+
+    top: 12%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .background-color-wrap {
+    height: 500px;
+    top: 8%;
+  }
 }

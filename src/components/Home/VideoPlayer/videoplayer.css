@@ -49,9 +49,10 @@
 }
 
 .videoContainer {
-   margin: 50px 50px;
+   margin: 50px;
    width: 100%;
    height: 100%;
+   min-height: 700px;
 
    border-radius: 12px;
    overflow: hidden;
@@ -71,4 +72,144 @@
    height: 64px;
    align-items: center;
    justify-content: center;
+}
+
+@media screen and (max-width: 1500px) {
+   .vdotitle {
+      gap: 15px;
+   }
+
+   .vdotitle h1 {
+      font-size: 54px;
+      line-height: 67px;
+   }
+
+   .vdotitle p {
+      font-size: 18px;
+      line-height: 22px;
+   }
+
+   .videoContainer {
+      margin: 45px;
+      min-height: 700px;
+   }
+
+   .vdotitle h1 span .strike-line {
+      height: 4px;
+   }
+}
+
+@media screen and (max-width: 1300px) {
+   .vdotitle {
+      gap: 10px;
+   }
+
+   .vdotitle h1 {
+      font-size: 48px;
+      line-height: 61px;
+   }
+
+   .vdotitle p {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 0 10px;
+   }
+
+   .videoContainer {
+      margin: 35px;
+      min-height: 400px;
+   }
+
+   .vdotitle h1 span .strike-line {
+      height: 3px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .vdotitle {
+      gap: 8px;
+   }
+
+   .vdotitle h1 {
+      font-size: 38px;
+      line-height: 51px;
+   }
+
+   .vdotitle p {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 0 8px;
+   }
+
+   .videoContainer {
+      margin: 25px;
+      min-height: 300px;
+   }
+
+   .vdotitle h1 span .strike-line {
+      height: 2.5px;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .vdotitle {
+      gap: 5px;
+   }
+
+   .vdotitle h1 {
+      font-size: 28px;
+      line-height: 36px;
+   }
+
+   .vdotitle p {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 0 0 6px;
+   }
+
+   .videoContainer {
+      margin: 18px;
+      min-height: 250px;
+   }
+
+   .vdotitle h1 span .strike-line {
+      height: 2px;
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .vdotitle {
+      gap: 5px;
+   }
+
+   .vdotitle h1 {
+      font-size: 28px;
+      line-height: 32px;
+   }
+
+   .vdotitle p {
+      font-size: 12px;
+      line-height: 14px;
+      margin: 0 0 5px;
+   }
+
+   .videoContainer {
+      margin: 15px;
+      min-height: 150px;
+   }
+
+   .vdotitle h1 span .strike-line {
+      height: 1.5px;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   .vdotitle {
+      gap: 5px;
+   }
+
+   .vdotitle h1 {
+      font-size: 24px;
+      line-height: 28px;
+   }
 }
