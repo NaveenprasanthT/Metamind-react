@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import Button from '../../Shared/Button/button';
 import logo from '../../../assets/mmLogo.png';
 import './navbar.css'
+import PopoverMenu from './PopoverMenu';
+import { IconButton } from '@mui/material';
+import { Chevron } from '../../../assets/svg/Chevron';
 import { CloseIcon, ToggleIcon } from '../svgIcon';
 
 const Navbar = ({ activeSection }) => {
@@ -20,6 +23,20 @@ const Navbar = ({ activeSection }) => {
         }
         setMobileToggle(false);
     };
+
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+  
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
+  
+    const open = Boolean(anchorEl);
+    const id = open ? "simple-popover" : undefined;
+
     return (
         <>
             <div className="empty-wrap" />
@@ -49,10 +66,9 @@ const Navbar = ({ activeSection }) => {
                                 About
                             </li>
                             <li
-                                onClick={() => scrollToElementWithOffset('service-section')}
-                                style={{ color: activeSection === 'service-section' && '#6633EE' }}
+                                style={{ color: activeSection === 'service-section' && '#6633EE',display:"flex",alignItems:"center",gap:"10px" }}
                             >
-                                Service
+                                <span onClick={() => scrollToElementWithOffset('service-section')}>Service</span> <span><IconButton aria-describedby={id} onClick={handleClick}><Chevron /> </IconButton></span>
                             </li>
                             <li
                                 onClick={() => scrollToElementWithOffset('our-works-section')}
@@ -61,6 +77,7 @@ const Navbar = ({ activeSection }) => {
                                 Portfolio
                             </li>
                         </ul>
+                        <PopoverMenu anchorEl={anchorEl} setAnchorEl={setInterval} open={open} id={id} handleClick={handleClick} handleClose={handleClose} />
                     </div>
                     <div className='navbarBtn'>
                         <Button buttonTxt={"Contact US"} handleClick={() => { }} />
@@ -89,7 +106,7 @@ const Navbar = ({ activeSection }) => {
                         <li
                             onClick={() => scrollToElementWithOffset('service-section')}
                         >
-                            Service
+                            Services
                         </li>
                         <li
                             onClick={() => scrollToElementWithOffset('our-works-section')}
